@@ -18,5 +18,8 @@ module.exports = {
     },
     subtract: (num1, num2) => {
         return num1 - num2;
+    },
+    favColor: (name, color) => {
+        return `${name}'s favorite color is ${color}`
     }
 };

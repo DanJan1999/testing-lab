@@ -1,4 +1,4 @@
-const { returnTwo, greeting, add, multiply, divide, subtract } = require('./functions');
+const { returnTwo, greeting, add, multiply, divide, subtract, favColor } = require('./functions');
 
 test('Should return 2', () => {
     expect(returnTwo()).toEqual(2);
@@ -24,4 +24,8 @@ describe(`Math functions`, () => {
     it(`Should return sum1 - sum2`, () => {
         expect(subtract(15, 7)).toEqual(8)
     });
-})
+});
+
+test("Should return ${name}'s favorite color is ${color}", () => {
+    expect(favColor(`Daniel`, `Blue`)).toEqual(`Daniel's favorite color is Blue`)
+});
